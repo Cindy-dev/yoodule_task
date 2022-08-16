@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: const Text('Earth Sample')),
         body: Container(
           child: ARKitSceneView(
             onARKitViewCreated: onARKitViewCreated,
