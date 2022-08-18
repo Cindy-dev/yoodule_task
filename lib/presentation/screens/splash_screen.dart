@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer.periodic(const Duration(seconds: 3), (timer) {
+    Future.delayed(const Duration(seconds: 3), () {
       navigatePush(context, const HomeScreen());
     });
   }
